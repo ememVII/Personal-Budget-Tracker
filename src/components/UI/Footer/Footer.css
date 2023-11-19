@@ -1,0 +1,41 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 4px -4px 16px -3px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer h3 {
+    font-size: 1.3rem;
+    color: var(--font-color);
+}
+
+.footer__icons {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+.footer__icons .fa-heart,.footer__icons .fa-facebook,.footer__icons .fa-linkedin{
+    transition: 0.4s ease;
+}
+
+.footer__icons .fa-heart:hover {
+    color: #fe464e;
+}
+.footer__icons .fa-facebook:hover {
+    color: #1877f2;
+}
+.footer__icons .fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.footer__icons a {
+    color: var(--font-color);
+}

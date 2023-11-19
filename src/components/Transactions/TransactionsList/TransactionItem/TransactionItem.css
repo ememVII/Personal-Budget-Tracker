@@ -1,0 +1,96 @@
+.transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #fff;
+    color: var(--font-color);
+    margin: 1rem 0;
+    border-radius: 12px;
+    border: 1px solid var(--font-color);
+}
+
+.transaction-item__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.transaction-item h2 {
+    flex: 1;
+    /* margin: 0 1rem; */
+}
+
+.transaction-item p {
+    flex: 1;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 !important;
+}
+
+.transaction-item__amount {
+    padding: 1rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+    border: solid 3px var(--font-color);
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+.transaction-item__amount:hover {
+    background-color: var(--hover-color);
+    border: solid 3px var(--hover-color);
+    color: #fff;
+}
+
+.transaction-item__deleteBtn {
+    border: none !important;
+}
+
+@media (max-width: 767px) {
+    .transaction-item {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        padding: 0.3rem;
+        margin: 0.7rem 0;
+        border-radius: 12px;
+        border: 1px solid var(--font-color);
+    } 
+    
+    .transaction-item__date, .transaction-item__description {
+        display: block;
+        margin: 0.5rem auto;
+        text-align: center;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* flex: 1; */
+        padding: 0 0.7rem;
+    }
+    
+    .transaction-item h2 {
+        flex: 1;
+        font-size: 1.3rem;
+        /* margin: 0 1rem; */
+    }
+    
+    .transaction-item p {
+        flex: 1;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 !important;
+    }
+    
+    .transaction-item__amount {
+        padding: 0.4rem;
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .transaction-item__deleteBtn {
+        font-size: 1rem;
+    }
+}

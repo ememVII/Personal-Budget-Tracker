@@ -1,0 +1,49 @@
+.transaction-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 6rem;
+    height: 6rem;
+    border: solid 3px var(--font-color);
+    color: var(--font-color);
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.transaction-date:hover {
+    background-color: var(--hover-color);
+    border: solid 3px var(--hover-color);
+    color: #fff;
+}
+
+.transaction-date__month {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.transaction-date__year {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.transaction-date__day {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .transaction-date {
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    .transaction-date__month {
+        font-size: 0.7rem;
+    }
+    .transaction-date__year {
+        font-size: 1rem;
+    }
+    .transaction-date__day {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,35 @@
+.transactions {
+    display: flex !important;
+    justify-content: space-between;
+    margin: 1rem auto !important;
+    padding: 1rem 1.3rem !important;
+    /* max-width: 95%; */
+    border-radius: 10px;
+    gap: 0.5rem;
+}
+
+.expense-transactions {
+    background-color: #dc475871 !important;
+}
+
+.income-transactions {
+    background-color: #60a87f7c !important;
+}
+
+.transactions, .expense-transactions, .income-transactions {
+    /* margin: 1rem auto; */
+    /* width: 50rem; */
+    flex: 1;
+    /* max-width: 95%; */
+    padding: 1rem;  
+    background-color: #fff;
+    border: 2px solid var(--font-color);
+    /* margin-bottom: 10rem; */
+}
+
+.transactions-list__not {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #263751;
+}

@@ -1,0 +1,9 @@
+.new-transaction {
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    color: #263751;
+    border: 1px solid #263751;
+    border-radius: 10px;
+    text-align: center;
+}
